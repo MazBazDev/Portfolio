@@ -8,6 +8,9 @@ use Illuminate\Validation\ValidationException;
 use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Throwable;
+use Illuminate\Contracts\Container\Container;
+use Illuminate\Http\Response;
+
 
 class Handler extends ExceptionHandler
 {
@@ -49,6 +52,14 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        if ($exception instanceof \Symfony\Component\HttpKernel\Exception\HttpException) {
+            $code = $exception->getStatusCode();
+            $message = $exception->getMessage();
+            $view = app('view')->make('error', compact('code', 'message'));
+            $response = new Response($view, $code);
+            return $response;
+        }
+        
         return parent::render($request, $exception);
     }
 }
