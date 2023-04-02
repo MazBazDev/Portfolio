@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller as ControllersController;
+use Illuminate\Http\Request;
 
 class HomeController extends ControllersController
 {
@@ -59,5 +60,12 @@ class HomeController extends ControllersController
         ]));
 
         return json_decode($datas);
+    }
+
+    public function changeLocal(Request $request) {
+        
+        setcookie('lang', $request->has("check-lang") ? 'en' : 'fr', time() + (86400 * 30), "/");
+
+        return redirect()->route("home");
     }
 }

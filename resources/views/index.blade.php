@@ -22,9 +22,7 @@
     <div class="card col-2 profile">
       <img class="img-fluid" src="/assets/img/pp.png" alt="">
       <div class="bio">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati omnis sunt, vel,
-          aut,
-          iste amet tenetur eum dolore</p>
+        <p> {{ lang("message.test") }}</p>
       </div>
     </div>
     <div class="card" id="map">
@@ -112,10 +110,12 @@
     <div class="card switchs">
       <div class="switch-container content">
         <span>🇫🇷</span>
-        <label class="switch">
-          <input type="checkbox" id="check-lang">
-          <span class="slider round"></span>
-        </label>
+        <form action="{{ route("change-local") }}" method="post" id="form-lang">
+          <label class="switch">
+            <input type="checkbox" id="check-lang" name="check-lang" onclick="document.getElementById('form-lang').submit();">
+            <span class="slider round"></span>
+          </label>
+        </form>
         <span>🇺🇸</span>
       </div>
       <div class="switch-container content">
@@ -440,5 +440,9 @@ $(document).ready(function(){
     }
   });
 });
+
+if ('{{ getLocal() }}' == "en") {
+  document.getElementById("check-lang").checked = true;
+}
 </script>
 </html>
