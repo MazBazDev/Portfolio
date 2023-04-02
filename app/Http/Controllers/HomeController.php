@@ -13,7 +13,39 @@ class HomeController extends ControllersController
         ]);
     }
 
-    public function getAllRepos()
+    public function allRepos() {
+        return view("works.index", [
+            "repos" => $this->getAllRepos(),
+        ]);
+    }
+
+    function showRepo($id) {
+        try {
+            $data = file_get_contents("https://api.github.com/repositories/$id", false, stream_context_create([
+                'http' => [
+                    'header' => [
+                        "User-Agent: PHP",
+                        "Authorization: token " . env("GITHUB_TOKEN"),
+                        "Accept: application/vnd.github.v3+json",
+                    ]
+                ]
+            ]));
+            $repo = json_decode($data);
+        
+            if (isset($repo->message) && $repo->message == "Not Found") {
+                abort(404, 'Page non trouvée');
+            }
+        
+            return view("works.show", [
+                "repo" => $repo
+            ]);
+
+        } catch (\Throwable $th) {
+            abort(404, 'Page non trouvée');
+        }
+    }
+
+    private function getAllRepos()
     {
         $username = env("GITHUB_USER_NAME");
 

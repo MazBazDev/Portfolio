@@ -141,7 +141,7 @@
 
     <div class="card col-2 works-bg">
       <div class="button-container content">
-        <a class="button" href="">
+        <a class="button" href="{{ route("works") }}">
           <span>Check my works</span>
           <svg style="height: 30px; width: 30px;" xmlns="http://www.w3.org/2000/svg" class="ionicon"
             viewBox="0 0 512 512">
@@ -157,7 +157,7 @@
       <div class="works-container">
         <div class="works-wrapper">
           @foreach ($repos as $repo)
-            <a class="work content" href="{{ $repo->id }}">
+            <a class="work content" href="{{ route("work", ['id' => $repo->id]) }}">
               <svg style="height: 200px; width: 200px;" viewBox="0 0 130 144" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g id="Folder">
