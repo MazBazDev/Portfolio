@@ -13,12 +13,12 @@
 }
 [data-theme=light] {
 	--primary-color: #ffffff;
-	--secondary-color: #1f2838;
-	--tertiary-color: #2a3445;
-	--accent-color: #ffffff;
-	--cv-background-color: #374151;
-	--cv-page-color: #464f5d;
-	--switch-circle-color: #1b2131;
+	--secondary-color: #f5f6f8;
+	--tertiary-color: #e4e7eb;
+	--accent-color: #101728;
+	--cv-background-color: #f9fafb;
+	--cv-page-color: #ffffff;
+	--switch-circle-color: #dcdee2;
 }
 
 html {
