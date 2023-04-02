@@ -156,169 +156,171 @@
       </div>
       <div class="works-container">
         <div class="works-wrapper">
-          <a class="work content" href="">
-            <svg style="height: 200px; width: 200px;" viewBox="0 0 130 144" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g id="Folder">
-                <g id="Rectangle 18" filter="url(#filter0_d_24_409)">
-                  <path
-                    d="M12.2142 57V57C12.2142 56.5357 12.2142 56.3036 12.2202 56.1073C12.4278 49.2356 17.9499 43.7135 24.8216 43.5059C25.0179 43.5 25.25 43.5 25.7142 43.5H49.4642C53.1922 43.5 56.2142 46.522 56.2142 50.25V50.25C56.2142 53.9779 59.2363 57 62.9642 57H93.4142C100.695 57 104.335 57 107.116 58.4169C109.562 59.6632 111.551 61.652 112.797 64.0981C114.214 66.8789 114.214 70.5193 114.214 77.8V115.2C114.214 122.481 114.214 126.121 112.797 128.902C111.551 131.348 109.562 133.337 107.116 134.583C104.335 136 100.695 136 93.4142 136H33.0142C25.7336 136 22.0932 136 19.3124 134.583C16.8662 133.337 14.8775 131.348 13.6311 128.902C12.2142 126.121 12.2142 122.481 12.2142 115.2V57Z"
-                    fill="url(#paint0_linear_24_409)" />
+          @foreach ($repos as $repo)
+            <a class="work content" href="{{ $repo->id }}">
+              <svg style="height: 200px; width: 200px;" viewBox="0 0 130 144" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="Folder">
+                  <g id="Rectangle 18" filter="url(#filter0_d_24_409)">
+                    <path
+                      d="M12.2142 57V57C12.2142 56.5357 12.2142 56.3036 12.2202 56.1073C12.4278 49.2356 17.9499 43.7135 24.8216 43.5059C25.0179 43.5 25.25 43.5 25.7142 43.5H49.4642C53.1922 43.5 56.2142 46.522 56.2142 50.25V50.25C56.2142 53.9779 59.2363 57 62.9642 57H93.4142C100.695 57 104.335 57 107.116 58.4169C109.562 59.6632 111.551 61.652 112.797 64.0981C114.214 66.8789 114.214 70.5193 114.214 77.8V115.2C114.214 122.481 114.214 126.121 112.797 128.902C111.551 131.348 109.562 133.337 107.116 134.583C104.335 136 100.695 136 93.4142 136H33.0142C25.7336 136 22.0932 136 19.3124 134.583C16.8662 133.337 14.8775 131.348 13.6311 128.902C12.2142 126.121 12.2142 122.481 12.2142 115.2V57Z"
+                      fill="url(#paint0_linear_24_409)" />
+                  </g>
+                  <g id="page-back">
+                    <path id="Rectangle 20"
+                      d="M21 31.6C21 31.0399 21 30.7599 21.109 30.546C21.2049 30.3578 21.3578 30.2049 21.546 30.109C21.7599 30 22.0399 30 22.6 30H86.3595C86.5961 30 86.7144 30 86.8262 30.026C86.9253 30.049 87.0203 30.0871 87.1079 30.1388C87.2067 30.1971 87.2923 30.2787 87.4636 30.442L96.5 39.0581L104.504 46.69C104.687 46.8643 104.778 46.9515 104.844 47.0544C104.902 47.1456 104.945 47.2457 104.971 47.3506C105 47.469 105 47.5953 105 47.848V110.4C105 110.96 105 111.24 104.891 111.454C104.795 111.642 104.642 111.795 104.454 111.891C104.24 112 103.96 112 103.4 112H22.6C22.0399 112 21.7599 112 21.546 111.891C21.3578 111.795 21.2049 111.642 21.109 111.454C21 111.24 21 110.96 21 110.4V31.6Z"
+                      fill="#D9D9D9" />
+                    <g id="Rectangle 21" filter="url(#filter1_d_24_409)">
+                      <path d="M87.2143 30L95.7143 38.1047L105.214 47.1628H87.2143V30Z" fill="#CBCBCB" />
+                    </g>
+                    <g id="text">
+                      <rect id="Rectangle 32" x="53.2143" y="89.1163" width="47" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 31" x="40.2143" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 30" x="27.2143" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 29" x="27.2143" y="75.7674" width="73" height="9.53488" fill="#B0B0B0" />
+                      <rect id="Rectangle 28" x="77.2143" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 27" x="53.2143" y="68.1395" width="21" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 26" x="27.2143" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 25" x="27.2143" y="57.6512" width="73" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 24" x="61.2143" y="47.1628" width="10" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 23" x="27.2143" y="47.1628" width="31" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 22" x="27.2143" y="39.5349" width="23" height="4.76744" fill="#B0B0B0" />
+                    </g>
+                  </g>
+                  <g id="page-mid" filter="url(#filter2_d_24_409)">
+                    <path id="Rectangle 20_2"
+                      d="M21 31.6C21 31.0399 21 30.7599 21.109 30.546C21.2049 30.3578 21.3578 30.2049 21.546 30.109C21.7599 30 22.0399 30 22.6 30H86.3595C86.5961 30 86.7144 30 86.8262 30.026C86.9253 30.049 87.0203 30.0871 87.1079 30.1388C87.2067 30.1971 87.2923 30.2787 87.4636 30.442L96.5 39.0581L104.504 46.69C104.687 46.8643 104.778 46.9515 104.844 47.0544C104.902 47.1456 104.945 47.2457 104.971 47.3506C105 47.469 105 47.5953 105 47.848V110.4C105 110.96 105 111.24 104.891 111.454C104.795 111.642 104.642 111.795 104.454 111.891C104.24 112 103.96 112 103.4 112H22.6C22.0399 112 21.7599 112 21.546 111.891C21.3578 111.795 21.2049 111.642 21.109 111.454C21 111.24 21 110.96 21 110.4V31.6Z"
+                      fill="#D9D9D9" />
+                    <g id="Rectangle 21_2" filter="url(#filter3_d_24_409)">
+                      <path d="M87 30L95.5 38.1047L105 47.1628H87V30Z" fill="#CBCBCB" />
+                    </g>
+                    <g id="text_2">
+                      <rect id="Rectangle 32_2" x="53" y="89.1163" width="47" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 31_2" x="40" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 30_2" x="27" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 29_2" x="27" y="75.7674" width="73" height="9.53488" fill="#B0B0B0" />
+                      <rect id="Rectangle 28_2" x="77" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 27_2" x="53" y="68.1395" width="21" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 26_2" x="27" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 25_2" x="27" y="57.6512" width="73" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 24_2" x="61" y="47.1628" width="10" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 23_2" x="27" y="47.1628" width="31" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 22_2" x="27" y="39.5349" width="23" height="4.76744" fill="#B0B0B0" />
+                    </g>
+                  </g>
+                  <g id="page-front" filter="url(#filter4_d_24_409)">
+                    <path id="Rectangle 20_3"
+                      d="M21 31.6C21 31.0399 21 30.7599 21.109 30.546C21.2049 30.3578 21.3578 30.2049 21.546 30.109C21.7599 30 22.0399 30 22.6 30H86.3595C86.5961 30 86.7144 30 86.8262 30.026C86.9253 30.049 87.0203 30.0871 87.1079 30.1388C87.2067 30.1971 87.2923 30.2787 87.4636 30.442L96.5 39.0581L104.504 46.69C104.687 46.8643 104.778 46.9515 104.844 47.0544C104.902 47.1456 104.945 47.2457 104.971 47.3506C105 47.469 105 47.5953 105 47.848V110.4C105 110.96 105 111.24 104.891 111.454C104.795 111.642 104.642 111.795 104.454 111.891C104.24 112 103.96 112 103.4 112H22.6C22.0399 112 21.7599 112 21.546 111.891C21.3578 111.795 21.2049 111.642 21.109 111.454C21 111.24 21 110.96 21 110.4L21 31.6Z"
+                      fill="#D9D9D9" />
+                    <g id="Rectangle 21_3" filter="url(#filter5_d_24_409)">
+                      <path d="M87 30L95.5 38.1047L105 47.1628H87V30Z" fill="#CBCBCB" />
+                    </g>
+                    <g id="text_3">
+                      <rect id="Rectangle 32_3" x="53" y="89.1163" width="47" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 31_3" x="40" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 30_3" x="27" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 29_3" x="27" y="75.7674" width="73" height="9.53488" fill="#B0B0B0" />
+                      <rect id="Rectangle 28_3" x="77" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 27_3" x="53" y="68.1395" width="21" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 26_3" x="27" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 25_3" x="27" y="57.6512" width="73" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 24_3" x="61" y="47.1628" width="10" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 23_3" x="27" y="47.1628" width="31" height="4.76744" fill="#B0B0B0" />
+                      <rect id="Rectangle 22_3" x="27" y="39.5349" width="23" height="4.76744" fill="#B0B0B0" />
+                    </g>
+                  </g>
+                  <path id="Rectangle 19"
+                    d="M12.2142 78.2C12.2142 74.2796 12.2142 72.3194 12.9772 70.8221C13.6483 69.5049 14.7192 68.4341 16.0363 67.7629C17.5337 67 19.4939 67 23.4142 67H103.014C106.935 67 108.895 67 110.392 67.7629C111.709 68.4341 112.78 69.5049 113.451 70.8221C114.214 72.3194 114.214 74.2796 114.214 78.2V115.2C114.214 122.481 114.214 126.121 112.797 128.902C111.551 131.348 109.562 133.337 107.116 134.583C104.335 136 100.695 136 93.4142 136H33.0142C25.7336 136 22.0932 136 19.3124 134.583C16.8662 133.337 14.8775 131.348 13.6311 128.902C12.2142 126.121 12.2142 122.481 12.2142 115.2V78.2Z"
+                    fill="url(#paint1_linear_24_409)" />
                 </g>
-                <g id="page-back">
-                  <path id="Rectangle 20"
-                    d="M21 31.6C21 31.0399 21 30.7599 21.109 30.546C21.2049 30.3578 21.3578 30.2049 21.546 30.109C21.7599 30 22.0399 30 22.6 30H86.3595C86.5961 30 86.7144 30 86.8262 30.026C86.9253 30.049 87.0203 30.0871 87.1079 30.1388C87.2067 30.1971 87.2923 30.2787 87.4636 30.442L96.5 39.0581L104.504 46.69C104.687 46.8643 104.778 46.9515 104.844 47.0544C104.902 47.1456 104.945 47.2457 104.971 47.3506C105 47.469 105 47.5953 105 47.848V110.4C105 110.96 105 111.24 104.891 111.454C104.795 111.642 104.642 111.795 104.454 111.891C104.24 112 103.96 112 103.4 112H22.6C22.0399 112 21.7599 112 21.546 111.891C21.3578 111.795 21.2049 111.642 21.109 111.454C21 111.24 21 110.96 21 110.4V31.6Z"
-                    fill="#D9D9D9" />
-                  <g id="Rectangle 21" filter="url(#filter1_d_24_409)">
-                    <path d="M87.2143 30L95.7143 38.1047L105.214 47.1628H87.2143V30Z" fill="#CBCBCB" />
-                  </g>
-                  <g id="text">
-                    <rect id="Rectangle 32" x="53.2143" y="89.1163" width="47" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 31" x="40.2143" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 30" x="27.2143" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 29" x="27.2143" y="75.7674" width="73" height="9.53488" fill="#B0B0B0" />
-                    <rect id="Rectangle 28" x="77.2143" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 27" x="53.2143" y="68.1395" width="21" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 26" x="27.2143" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 25" x="27.2143" y="57.6512" width="73" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 24" x="61.2143" y="47.1628" width="10" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 23" x="27.2143" y="47.1628" width="31" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 22" x="27.2143" y="39.5349" width="23" height="4.76744" fill="#B0B0B0" />
-                  </g>
-                </g>
-                <g id="page-mid" filter="url(#filter2_d_24_409)">
-                  <path id="Rectangle 20_2"
-                    d="M21 31.6C21 31.0399 21 30.7599 21.109 30.546C21.2049 30.3578 21.3578 30.2049 21.546 30.109C21.7599 30 22.0399 30 22.6 30H86.3595C86.5961 30 86.7144 30 86.8262 30.026C86.9253 30.049 87.0203 30.0871 87.1079 30.1388C87.2067 30.1971 87.2923 30.2787 87.4636 30.442L96.5 39.0581L104.504 46.69C104.687 46.8643 104.778 46.9515 104.844 47.0544C104.902 47.1456 104.945 47.2457 104.971 47.3506C105 47.469 105 47.5953 105 47.848V110.4C105 110.96 105 111.24 104.891 111.454C104.795 111.642 104.642 111.795 104.454 111.891C104.24 112 103.96 112 103.4 112H22.6C22.0399 112 21.7599 112 21.546 111.891C21.3578 111.795 21.2049 111.642 21.109 111.454C21 111.24 21 110.96 21 110.4V31.6Z"
-                    fill="#D9D9D9" />
-                  <g id="Rectangle 21_2" filter="url(#filter3_d_24_409)">
-                    <path d="M87 30L95.5 38.1047L105 47.1628H87V30Z" fill="#CBCBCB" />
-                  </g>
-                  <g id="text_2">
-                    <rect id="Rectangle 32_2" x="53" y="89.1163" width="47" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 31_2" x="40" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 30_2" x="27" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 29_2" x="27" y="75.7674" width="73" height="9.53488" fill="#B0B0B0" />
-                    <rect id="Rectangle 28_2" x="77" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 27_2" x="53" y="68.1395" width="21" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 26_2" x="27" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 25_2" x="27" y="57.6512" width="73" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 24_2" x="61" y="47.1628" width="10" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 23_2" x="27" y="47.1628" width="31" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 22_2" x="27" y="39.5349" width="23" height="4.76744" fill="#B0B0B0" />
-                  </g>
-                </g>
-                <g id="page-front" filter="url(#filter4_d_24_409)">
-                  <path id="Rectangle 20_3"
-                    d="M21 31.6C21 31.0399 21 30.7599 21.109 30.546C21.2049 30.3578 21.3578 30.2049 21.546 30.109C21.7599 30 22.0399 30 22.6 30H86.3595C86.5961 30 86.7144 30 86.8262 30.026C86.9253 30.049 87.0203 30.0871 87.1079 30.1388C87.2067 30.1971 87.2923 30.2787 87.4636 30.442L96.5 39.0581L104.504 46.69C104.687 46.8643 104.778 46.9515 104.844 47.0544C104.902 47.1456 104.945 47.2457 104.971 47.3506C105 47.469 105 47.5953 105 47.848V110.4C105 110.96 105 111.24 104.891 111.454C104.795 111.642 104.642 111.795 104.454 111.891C104.24 112 103.96 112 103.4 112H22.6C22.0399 112 21.7599 112 21.546 111.891C21.3578 111.795 21.2049 111.642 21.109 111.454C21 111.24 21 110.96 21 110.4L21 31.6Z"
-                    fill="#D9D9D9" />
-                  <g id="Rectangle 21_3" filter="url(#filter5_d_24_409)">
-                    <path d="M87 30L95.5 38.1047L105 47.1628H87V30Z" fill="#CBCBCB" />
-                  </g>
-                  <g id="text_3">
-                    <rect id="Rectangle 32_3" x="53" y="89.1163" width="47" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 31_3" x="40" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 30_3" x="27" y="89.1163" width="10" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 29_3" x="27" y="75.7674" width="73" height="9.53488" fill="#B0B0B0" />
-                    <rect id="Rectangle 28_3" x="77" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 27_3" x="53" y="68.1395" width="21" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 26_3" x="27" y="68.1395" width="23" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 25_3" x="27" y="57.6512" width="73" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 24_3" x="61" y="47.1628" width="10" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 23_3" x="27" y="47.1628" width="31" height="4.76744" fill="#B0B0B0" />
-                    <rect id="Rectangle 22_3" x="27" y="39.5349" width="23" height="4.76744" fill="#B0B0B0" />
-                  </g>
-                </g>
-                <path id="Rectangle 19"
-                  d="M12.2142 78.2C12.2142 74.2796 12.2142 72.3194 12.9772 70.8221C13.6483 69.5049 14.7192 68.4341 16.0363 67.7629C17.5337 67 19.4939 67 23.4142 67H103.014C106.935 67 108.895 67 110.392 67.7629C111.709 68.4341 112.78 69.5049 113.451 70.8221C114.214 72.3194 114.214 74.2796 114.214 78.2V115.2C114.214 122.481 114.214 126.121 112.797 128.902C111.551 131.348 109.562 133.337 107.116 134.583C104.335 136 100.695 136 93.4142 136H33.0142C25.7336 136 22.0932 136 19.3124 134.583C16.8662 133.337 14.8775 131.348 13.6311 128.902C12.2142 126.121 12.2142 122.481 12.2142 115.2V78.2Z"
-                  fill="url(#paint1_linear_24_409)" />
-              </g>
-              <defs>
-                <filter id="filter0_d_24_409" x="8.21423" y="43.5" width="110" height="100.5"
-                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
-                </filter>
-                <filter id="filter1_d_24_409" x="85.2143" y="29" width="22" height="21.1628"
-                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="1" />
-                  <feGaussianBlur stdDeviation="1" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
-                </filter>
-                <filter id="filter2_d_24_409" x="17" y="30" width="92" height="90" filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
-                </filter>
-                <filter id="filter3_d_24_409" x="85" y="29" width="22" height="21.1628" filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="1" />
-                  <feGaussianBlur stdDeviation="1" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
-                </filter>
-                <filter id="filter4_d_24_409" x="17" y="30" width="92" height="90" filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
-                </filter>
-                <filter id="filter5_d_24_409" x="85" y="29" width="22" height="21.1628" filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="1" />
-                  <feGaussianBlur stdDeviation="1" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
-                </filter>
-                <linearGradient id="paint0_linear_24_409" x1="63.2142" y1="57" x2="63.2142" y2="136"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#2F70AC" />
-                  <stop offset="0.541407" stop-color="#093863" />
-                </linearGradient>
-                <linearGradient id="paint1_linear_24_409" x1="63.2142" y1="67" x2="82.3014" y2="137.466"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#4F98DB" />
-                  <stop offset="1" stop-color="#7BAFDE" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <h5>Card title</h5>
-          </a>
+                <defs>
+                  <filter id="filter0_d_24_409" x="8.21423" y="43.5" width="110" height="100.5"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
+                  </filter>
+                  <filter id="filter1_d_24_409" x="85.2143" y="29" width="22" height="21.1628"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dy="1" />
+                    <feGaussianBlur stdDeviation="1" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
+                  </filter>
+                  <filter id="filter2_d_24_409" x="17" y="30" width="92" height="90" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
+                  </filter>
+                  <filter id="filter3_d_24_409" x="85" y="29" width="22" height="21.1628" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dy="1" />
+                    <feGaussianBlur stdDeviation="1" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
+                  </filter>
+                  <filter id="filter4_d_24_409" x="17" y="30" width="92" height="90" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
+                  </filter>
+                  <filter id="filter5_d_24_409" x="85" y="29" width="22" height="21.1628" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dy="1" />
+                    <feGaussianBlur stdDeviation="1" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_409" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_409" result="shape" />
+                  </filter>
+                  <linearGradient id="paint0_linear_24_409" x1="63.2142" y1="57" x2="63.2142" y2="136"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2F70AC" />
+                    <stop offset="0.541407" stop-color="#093863" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_24_409" x1="63.2142" y1="67" x2="82.3014" y2="137.466"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4F98DB" />
+                    <stop offset="1" stop-color="#7BAFDE" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h5>{{ $repo->name }}</h5>
+            </a>
+          @endforeach
         </div>
       </div>
     </div>
