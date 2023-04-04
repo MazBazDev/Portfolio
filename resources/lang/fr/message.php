@@ -15,5 +15,6 @@ return [
     "resume" => [
         "link" => "Voir mon cv",
         "title" => "Mon CV",
+        "download" => "Télécharger"
     ]
 ];

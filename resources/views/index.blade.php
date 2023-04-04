@@ -44,7 +44,7 @@
     </div>
     <div class="card cv">
       <div class="button-container content">
-        <a class="button" href="">
+        <a class="button" href="{{ route("resume") }}">
           <span>{{ lang("message.resume.link") }}</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
             style="height: 30px; width: 30px;">
@@ -120,9 +120,6 @@
           </linearGradient>
           </defs>
           </svg>
-          
-          
-          
     </div>
 
     <div class="card switchs">

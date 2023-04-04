@@ -62,4 +62,11 @@ class HomeController extends ControllersController
         ]));
         return json_decode($data);
     }
+
+    public function resume()
+    {
+        return view("resume", [
+            "resume" => url("/resumes/" . getLocal() . ".pdf"),
+        ]);
+    }
 }

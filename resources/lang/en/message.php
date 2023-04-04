@@ -15,5 +15,7 @@ return [
     "resume" => [
         "link" => "See my resume",
         "title" => "My resume",
+        "download" => "Download"
+
     ]
 ];
