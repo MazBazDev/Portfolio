@@ -137,7 +137,7 @@ img{
 
 .cv:hover #folder-cv #page {
     transition: all 0.2s ease-in-out;
-    transform: translate(55.5px, 33.5px);
+    transform: translate(0, -10px);
 }
 
 .cv .button-container {
