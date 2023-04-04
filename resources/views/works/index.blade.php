@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MazBaz.fr | Works</title>
+  <title>MazBaz.fr | {{ lang("message.works.title") }}</title>
   <link rel="stylesheet" href="{{ url('/assets/css/style.css') }}">
 
   <script src="{{ url('/assets/js/jquery-3.6.4.min.js') }}"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
+<script src="{{ url('/assets/vendor/scroll-reveal/scroll-reveal.js')}}"></script>
 </head>
 
 <body data-theme="dark" class="pages">
@@ -17,11 +17,11 @@
         <div>
             <a href="{{ route("home") }}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg>
-                Home
+                {{ lang("message.app.home") }}
             </a>
         </div>
 
-        <h1>My works</h1>
+        <h1>{{ lang("message.works.title") }}</h1>
         
         <div class="switch-container">
             <svg xmlns="http://www.w3.org/2000/svg" style="height: 30px; width: 30px;" class="ionicon"

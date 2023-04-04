@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="{{ url('/assets/css/style.css') }}">
 
   <script src="{{ url('/assets/js/jquery-3.6.4.min.js') }}"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body data-theme="dark" class="pages">
@@ -17,7 +16,7 @@
         <div class="">
             <a href="{{ route("works") }}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg>
-                back
+                {{ lang("message.app.back") }}
             </a>
         </div>
 
@@ -50,8 +49,7 @@
         <span>{{ date("Y") }} MazBaz.fr | made with <span class="hearth">❤️</span> keyboard </span>
       </footer>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="{{ url('/assets/vendor/scroll-reveal/scroll-reveal.js')}}"></script>
 <script src="{{ url('/assets/js/theme.js') }}"></script>
 </html>
 

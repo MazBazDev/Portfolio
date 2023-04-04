@@ -5,16 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MazBaz.fr | French web dev</title>
+  <title>MazBaz.fr | {{ lang("message.title") }}</title>
   <link rel="stylesheet" href="{{ url('/assets/css/style.css') }}">
 
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
 
   <script src="{{ url('/assets/js/jquery-3.6.4.min.js') }}"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{{ url("/assets/vendor/owl-carousel/owlCarouselTheme.css") }}">
+  <link rel="stylesheet" href="{{ url("/assets/vendor/owl-carousel/owlCarousel.css") }}">
 </head>
 
 <body data-theme="dark">
@@ -22,7 +21,7 @@
     <div class="card col-2 profile">
       <img class="img-fluid" src="/assets/img/pp.png" alt="">
       <div class="bio">
-        <p> {{ lang("message.test") }}</p>
+        <p> {{ lang("message.desc") }}</p>
       </div>
     </div>
     <div class="card" id="map">
@@ -46,7 +45,7 @@
     <div class="card cv">
       <div class="button-container content">
         <a class="button" href="">
-          <span>Check my cv :)</span>
+          <span>{{ lang("message.resume.link") }}</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
             style="height: 30px; width: 30px;">
             <path
@@ -142,7 +141,7 @@
     <div class="card col-2 works-bg">
       <div class="button-container content">
         <a class="button" href="{{ route("works") }}">
-          <span>Check my works</span>
+          <span>{{ lang("message.works.link") }}</span>
           <svg style="height: 30px; width: 30px;" xmlns="http://www.w3.org/2000/svg" class="ionicon"
             viewBox="0 0 512 512">
             <path
@@ -377,11 +376,11 @@
 <script>
   mapboxgl.accessToken = `{{ env("MAPBOX_TOKEN") }}`;
 </script>
-
+<script src="{{ url('/assets/vendor/scroll-reveal/scroll-reveal.js')}}"></script>
 <script src="{{ url('/assets/js/app.js') }}"></script>
 <script src="{{ url('/assets/js/theme.js') }}"></script>
-<script src="{{ url('/assets/js/tilt.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="{{ url('/assets/vendor/tilt/tilt.js') }}"></script>
+<script src="{{ url('/assets/vendor/owl-carousel/owlCarousel.js') }}"></script>
 
 <script>
   map.on("load", () => {
