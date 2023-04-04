@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MazBaz.fr | {{ $repo->name }}</title>
   <link rel="stylesheet" href="{{ url('/assets/css/style.css') }}">
-
-  <script src="{{ url('/assets/js/jquery-3.6.4.min.js') }}"></script>
 </head>
 <body data-theme="dark" class="pages">
     <div class="top">

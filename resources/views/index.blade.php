@@ -11,7 +11,7 @@
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
 
-  <script src="{{ url('/assets/js/jquery-3.6.4.min.js') }}"></script>
+  <script src="{{ url('/assets/vendor/jquery/jquery.js') }}"></script>
   <link rel="stylesheet" href="{{ url("/assets/vendor/owl-carousel/owlCarouselTheme.css") }}">
   <link rel="stylesheet" href="{{ url("/assets/vendor/owl-carousel/owlCarousel.css") }}">
 </head>
@@ -371,11 +371,11 @@
     <span>{{ date("Y") }} MazBaz.fr | made with <span class="hearth">❤️</span> keyboard </span>
   </footer>
 </body>
-<script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
 
 <script>
   mapboxgl.accessToken = `{{ env("MAPBOX_TOKEN") }}`;
 </script>
+<script src="{{ url("/assets/vendor/sortable/sortable.js") }}"></script>
 <script src="{{ url('/assets/vendor/scroll-reveal/scroll-reveal.js')}}"></script>
 <script src="{{ url('/assets/js/app.js') }}"></script>
 <script src="{{ url('/assets/js/theme.js') }}"></script>
