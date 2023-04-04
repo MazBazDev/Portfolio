@@ -379,6 +379,7 @@
 </script>
 
 <script src="{{ url('/assets/js/app.js') }}"></script>
+<script src="{{ url('/assets/js/theme.js') }}"></script>
 <script src="{{ url('/assets/js/tilt.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
