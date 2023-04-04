@@ -524,3 +524,22 @@ footer .hearth {
 		display: none;
 	}
 }
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.pages * {
+    cursor: pointer;
+    text-decoration: none;
+}
+.pages .link .card {
+    transition: transform .2s ease-in-out;
+}
+.pages .link .card:hover {
+    transition: transform .1s ease-in-out;
+    transform: scale(1.2);
+}
