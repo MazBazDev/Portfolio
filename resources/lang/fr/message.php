@@ -10,6 +10,7 @@ return [
     "works" => [
         "link" => "Voir mes projets",
         "title" => "Mes projets",
+        "github-link" => "Voir sur GitHub"
     ],
     "resume" => [
         "link" => "Voir mon cv",

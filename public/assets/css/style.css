@@ -543,3 +543,6 @@ footer .hearth {
     transition: transform .1s ease-in-out;
     transform: scale(1.2);
 }
+.center {
+    justify-content: center!important;
+}
