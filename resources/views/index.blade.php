@@ -17,10 +17,10 @@
 </head>
 
 <body data-theme="dark">
-  <div class="cards">
+  <div class="cards ">
     <div class="card col-2 profile">
-      <img class="img-fluid" src="/assets/img/pp.png" alt="">
-      <div class="bio">
+      <img class="img-fluid content" src="/assets/img/pp.png" alt="">
+      <div class="bio content">
         <p> {{ lang("message.desc") }}</p>
       </div>
     </div>
