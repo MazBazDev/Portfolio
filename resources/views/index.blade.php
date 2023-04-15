@@ -369,7 +369,7 @@
       </div>
     </div>
 
-    <div class="card col-4 fun-bg">
+    {{-- <div class="card col-4 fun-bg">
       <div class="owl-carousel owl-theme" id="container">
         <div class="content"><img src="{{ url('assets/img/fun/apple.png') }}" class="image" data-tilt ></div>
         <div class="content"><img src="{{ url('assets/img/fun/discord.png') }}" class="image" data-tilt ></div>
@@ -380,7 +380,7 @@
         <div class="content"><img src="{{ url('assets/img/fun/spotify.png') }}" class="image" data-tilt ></div>
         <div class="content"><img src="{{ url('assets/img/fun/tailwinds.png') }}" class="image" data-tilt ></div>
       </div>
-    </div>
+    </div> --}}
   </div>
 
   <footer>
