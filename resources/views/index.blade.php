@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MazBaz.fr | {{ lang("message.title") }}</title>
   <link rel="stylesheet" href="{{ url('/assets/css/style.css') }}">
-
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
-
+  
+  @if(getApiUsage() < 49000)
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+  @endif
+  
   <script src="{{ url('/assets/vendor/jquery/jquery.js') }}"></script>
   <link rel="stylesheet" href="{{ url("/assets/vendor/owl-carousel/owlCarouselTheme.css") }}">
   <link rel="stylesheet" href="{{ url("/assets/vendor/owl-carousel/owlCarousel.css") }}">
@@ -24,24 +26,28 @@
         <p> {{ lang("message.desc") }}</p>
       </div>
     </div>
-    <div class="card" id="map">
-      <div class="button-container content">
-        <a id="scaleUp">
-          <svg style="height: 30px; width: 30px;" xmlns="http://www.w3.org/2000/svg" class="ionicon"
-            viewBox="0 0 512 512">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
-              d="M256 112v288M400 256H112" />
-          </svg>
-        </a>
-        <a id="scaleDown">
-          <svg style="height: 30px; width: 30px;" xmlns="http://www.w3.org/2000/svg" class="ionicon"
-            viewBox="0 0 512 512">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
-              d="M400 256H112" />
-          </svg>
-        </a>
+    
+    @if(getApiUsage() < 49000)
+      <div class="card" id="map">
+        <div class="button-container content">
+          <a id="scaleUp">
+            <svg style="height: 30px; width: 30px;" xmlns="http://www.w3.org/2000/svg" class="ionicon"
+              viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M256 112v288M400 256H112" />
+            </svg>
+          </a>
+          <a id="scaleDown">
+            <svg style="height: 30px; width: 30px;" xmlns="http://www.w3.org/2000/svg" class="ionicon"
+              viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M400 256H112" />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
+    @endif
+
     <div class="card cv">
       <div class="button-container content">
         <a class="button" href="{{ route("resume") }}">
@@ -398,6 +404,7 @@
 <script src="{{ url('/assets/vendor/tilt/tilt.js') }}"></script>
 <script src="{{ url('/assets/vendor/owl-carousel/owlCarousel.js') }}"></script>
 
+@if(getApiUsage() < 49000)
 <script>
   map.on("load", () => {
 	map.loadImage(`{{ url('assets/img/map-ping.png') }}`, (error, image) => {
@@ -432,7 +439,10 @@
 		});
 	});
 });
+</script>
+@endif
 
+<script>
 $('[data-tilt]').tilt({
 	scale: 1.1
 })
@@ -461,4 +471,5 @@ if ('{{ getLocal() }}' == "en") {
   document.getElementById("check-lang").checked = true;
 }
 </script>
+
 </html>
