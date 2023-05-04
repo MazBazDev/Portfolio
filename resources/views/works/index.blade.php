@@ -8,7 +8,17 @@
   <title>MazBaz.fr | {{ lang("message.works.title") }}</title>
   <link rel="stylesheet" href="{{ url('/assets/css/style.css') }}">
 </head>
+<script src="{{ url('/assets/js/theme.js') }}"></script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3SGGSWVXL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3SGGSWVXL');
+</script>
 <body data-theme="dark" class="pages">
     <div class="top">
         <div>
@@ -58,15 +68,4 @@
         <span>{{ date("Y") }} MazBaz.fr | made with <span class="hearth">❤️</span> keyboard </span>
     </footer>
 </body>
-<script src="{{ url('/assets/js/theme.js') }}"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3SGGSWVXL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V3SGGSWVXL');
-</script>
 </html>
