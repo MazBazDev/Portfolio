@@ -60,5 +60,15 @@
 </body>
 <script src="{{ url('/assets/vendor/scroll-reveal/scroll-reveal.js')}}"></script>
 <script src="{{ url('/assets/js/theme.js') }}"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3SGGSWVXL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3SGGSWVXL');
+</script>
 </html>
 
