@@ -16,7 +16,19 @@
   <script src="{{ url('/assets/vendor/jquery/jquery.js') }}"></script>
   <link rel="stylesheet" href="{{ url("/assets/vendor/owl-carousel/owlCarouselTheme.css") }}">
   <link rel="stylesheet" href="{{ url("/assets/vendor/owl-carousel/owlCarousel.css") }}">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3SGGSWVXL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V3SGGSWVXL');
+  </script>
 </head>
+
+
 
 <body data-theme="dark">
   <div class="cards ">
@@ -471,5 +483,4 @@ if ('{{ getLocal() }}' == "en") {
   document.getElementById("check-lang").checked = true;
 }
 </script>
-
 </html>
