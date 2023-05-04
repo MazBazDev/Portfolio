@@ -72,13 +72,14 @@ $app->configure('app');
 |
 */
 
-$app->middleware([
-    \App\Http\Middleware\ApiCountMiddleware::class,
-]);
+// $app->middleware([
 
-// $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
 // ]);
+
+$app->routeMiddleware([
+    // 'auth' => App\Http\Middleware\Authenticate::class,
+    'apiCount' =>  \App\Http\Middleware\ApiCountMiddleware::class
+]);
 
 /*
 |--------------------------------------------------------------------------

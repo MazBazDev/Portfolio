@@ -13,7 +13,8 @@
 |
 */
 
-$router->get('/', ['as' => 'home', 'uses' => "HomeController@home"]);
+$router->get('/', ['middleware' => 'apiCount', 'as' => 'home', 'uses' => "HomeController@home"]);
+
 $router->get('/works', ['as' => 'works', 'uses' => "HomeController@allRepos"]);
 $router->get('/works/{id}', ['as' => 'work', 'uses' => "HomeController@showRepo"]);
 
