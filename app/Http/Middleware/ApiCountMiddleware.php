@@ -16,9 +16,6 @@ class ApiCountMiddleware
      */
     public function handle($request, Closure $next)
     {
-
-        dd($request->header());
-
         if ($request->header('Cache-Control') !== 'keep-alive') {
             $path = storage_path('app/api_count.json');
         
