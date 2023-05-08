@@ -17,18 +17,22 @@ class ApiCountMiddleware
     public function handle($request, Closure $next)
     {
 
-        $path = storage_path('app/api_count.json');
+        dd($request->header());
+
+        if ($request->header('Cache-Control') !== 'keep-alive') {
+            $path = storage_path('app/api_count.json');
         
-        $content = file_get_contents($path);
-
-        $data = json_decode($content, true);
-
-        $data['map_box']++;
-
-        $content = json_encode($data);
-
-        file_put_contents($path, $content);
-
+            $content = file_get_contents($path);
+    
+            $data = json_decode($content, true);
+    
+            $data['map_box']++;
+    
+            $content = json_encode($data);
+    
+            file_put_contents($path, $content);
+        } 
+       
         return $next($request);
    }
 }
